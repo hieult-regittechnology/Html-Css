@@ -28,6 +28,6 @@ window.onscroll = function() {
         document.getElementById("header").style.top = "0";
     } else {
         document.getElementById("header").style.top = "-80px";
-    Name}
+    }
     prevScrollpos = currentScrollPos;
 }

@@ -1,3 +1,4 @@
+// Hamburger
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
@@ -17,17 +18,16 @@ function closeMenu() {
     navMenu.classList.remove("active");
 }
 
+// Scroll On Top will appears menu
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos < currentScrollPos) {
-    document.getElementById("menu").style.top = "0";
-  }
-  else if (currentScrollPos <= 200) {
-    document.getElementById("menu").style.top = "0";
-  }
-  else {
-    document.getElementById("menu").style.top = "-80px";
-  }
-  prevScrollpos = currentScrollPos;
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos < currentScrollPos) {
+        document.getElementById("header").style.top = "0";
+    } else if (currentScrollPos <= 200) {
+        document.getElementById("header").style.top = "0";
+    } else {
+        document.getElementById("header").style.top = "-80px";
+    Name}
+    prevScrollpos = currentScrollPos;
 }

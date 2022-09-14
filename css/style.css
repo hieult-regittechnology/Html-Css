@@ -121,11 +121,12 @@ a {
 
 .top-border {
   border: 2px solid #770303;
-  padding: 3px 12.5px;
+  padding: 0px 12.5px;
   border-radius: 3px;
   background-color: #770303;
   color: white;
   font-weight: bold;
+  height:31px;
 }
 
 .slider img {

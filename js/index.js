@@ -24,10 +24,10 @@ window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos < currentScrollPos) {
         document.getElementById("header").style.top = "0";
-    } else if (currentScrollPos <= 200) {
+    } else if (currentScrollPos <= 100) {
         document.getElementById("header").style.top = "0";
     } else {
-        document.getElementById("header").style.top = "-80px";
+        document.getElementById("header").style.top = "-100px";
     }
     prevScrollpos = currentScrollPos;
 }

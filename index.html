@@ -9,22 +9,24 @@
         <link rel="stylesheet" href="./css/style.css" />
     </head>
     <body>
-        <header id="header">
+        <header >
             <div class="container">
-                <div class="navigation" >
-                    <div class="hamburger">
+                <div class="navigation" id="header">
+                    <div class="hamburger" >
                         <span class="bar"></span>
                         <span class="bar"></span>
                         <span class="bar"></span>
                     </div>
-                    <nav class="header-logo ">
+                    <nav class="header-logo">
                         <div class="logo">
                             <a href="#"><img src="./assets/images/logo.png"></a>
                         </div>
                         <div class="logo-title">
                             <nav>RT-Blogs</nav>
                         </div>
-                        <form class="search-form">
+                    </nav>
+                    <nav class="search-form">
+                        <form>
                             <div class="form-group">
                                 <input type="text" placeholder="Search blog" name="search" class="search"/> 
                                 <span class="material-symbols-outlined search-span">search</span>
@@ -34,25 +36,18 @@
                     <nav class="header-menu nav-menu">
                         <div class="header-menu-item"><a href="#" class="nav-link top-border">Top</a></div>
                         <div class="header-menu-item"><a href="#" class="nav-link">Create Blog</a></div>
-                        <div class="header-menu-item myname"><a href="#" class="nav-link">myname</a></div>
-                        <div class="dropdown">
-                            <span class="material-symbols-outlined">
-                            account_circle
-                            </span>
-                            <div class="dropdown-content">
-                                <div><a href="#">Logout</a></div>
-                                <div><a href="#">My blogs</a></div>
-                                <div><a href="#">Approvals Pending</a></div>
-                            </div>
-                        </div>
+                    </nav>
+                    <div class="header-account nav-menu"><a href="#" class="nav-link">myname</a>
+                        <span class="material-symbols-outlined">
+                        account_circle
+                        </span>
+                    </div>
                     </nav>
                 </div>
             </div>
         </header>
         <section class="slider">
-            <div class="container">
-                <img src="./assets/images/thumbnail.png" alt="slider" />
-            </div>
+            <img src="./assets/images/thumbnail.png" alt="slider" />
         </section>
         <section class="posts">
             <div class="container">
@@ -69,116 +64,116 @@
             <div class="content">
                 <div class="row">
                     <div class="post-item">
-                        <a href="#">
-                            <img src="./assets/images/post_picture_1.png" alt="sample" class=""/>
+                        <img src="./assets/images/post_picture_1.png" alt="sample" class=""/>
+                        <div class="post-content">
                             <div class="post-detail">
                                 <span class="material-symbols-outlined icon">person</span><span class="text-icon">Jimmy Nguyen</span>
                                 <span class="material-symbols-outlined icon">schedule</span><span class="text-icon">3 mins ago</span>
                             </div>
                             <h1 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur ipsum linum amataki hulanjfh bfueodap fiefhief... </p>
-                        <a  href="#" class="read-more-item">Read more <span class="arrow"> &xrarr;</span></a>
-                        </a >
+                            <button href="#" class="read-more-item">Read more <span class="arrow"> &xrarr;</span></button>
+                        </div>
                     </div>
                     <div class="post-item">
-                        <a href="#">
-                            <img src="./assets/images/post_picture_2.png" alt="sample" class=""/>
+                        <img src="./assets/images/post_picture_1.png" alt="sample" class=""/>
+                        <div class="post-content">
                             <div class="post-detail">
                                 <span class="material-symbols-outlined icon">person</span><span class="text-icon">Jimmy Nguyen</span>
                                 <span class="material-symbols-outlined icon">schedule</span><span class="text-icon">3 mins ago</span>
                             </div>
                             <h1 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur ipsum linum amataki hulanjfh bfueodap fiefhief... </p>
-                        <a  href="#" class="read-more-item">Read more <span class="arrow"> &xrarr;</span></a>
-                        </a >
+                            <button href="#" class="read-more-item">Read more <span class="arrow"> &xrarr;</span></button>
+                        </div>
                     </div>
                     <div class="post-item">
-                        <a href="#">
-                            <img src="./assets/images/post_picture_3.png" alt="sample" class=""/>
+                        <img src="./assets/images/post_picture_1.png" alt="sample" class=""/>
+                        <div class="post-content">
                             <div class="post-detail">
                                 <span class="material-symbols-outlined icon">person</span><span class="text-icon">Jimmy Nguyen</span>
                                 <span class="material-symbols-outlined icon">schedule</span><span class="text-icon">3 mins ago</span>
                             </div>
                             <h1 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur ipsum linum amataki hulanjfh bfueodap fiefhief... </p>
-                        <a  href="#" class="read-more-item">Read more <span class="arrow"> &xrarr;</span></a>
-                        </a >
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="post-item">
-                        <a href="#">
-                            <img src="./assets/images/post_picture_4.png" alt="sample" class=""/>
-                            <div class="post-detail">
-                                <span class="material-symbols-outlined icon">person</span><span class="text-icon">Jimmy Nguyen</span>
-                                <span class="material-symbols-outlined icon">schedule</span><span class="text-icon">3 mins ago</span>
-                            </div>
-                            <h1 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur ipsum linum amataki hulanjfh bfueodap fiefhief... </p>
-                        <a  href="#" class="read-more-item">Read more <span class="arrow"> &xrarr;</span></a>
-                        </a >
-                    </div>
-                    <div class="post-item">
-                        <a href="#">
-                            <img src="./assets/images/post_picture_5.png" alt="sample" class=""/>
-                            <div class="post-detail">
-                                <span class="material-symbols-outlined icon">person</span><span class="text-icon">Jimmy Nguyen</span>
-                                <span class="material-symbols-outlined icon">schedule</span><span class="text-icon">3 mins ago</span>
-                            </div>
-                            <h1 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur ipsum linum amataki hulanjfh bfueodap fiefhief... </p>
-                        <a  href="#" class="read-more-item">Read more <span class="arrow"> &xrarr;</span></a>
-                        </a >
-                    </div>
-                    <div class="post-item">
-                        <a href="#">
-                            <img src="./assets/images/post_picture_6.png" alt="sample" class=""/>
-                            <div class="post-detail">
-                                <span class="material-symbols-outlined icon">person</span><span class="text-icon">Jimmy Nguyen</span>
-                                <span class="material-symbols-outlined icon">schedule</span><span class="text-icon">3 mins ago</span>
-                            </div>
-                            <h1 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur ipsum linum amataki hulanjfh bfueodap fiefhief... </p>
-                        <a  href="#" class="read-more-item">Read more <span class="arrow"> &xrarr;</span></a>
-                        </a >
+                            <button href="#" class="read-more-item">Read more <span class="arrow"> &xrarr;</span></button>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="post-item">
-                        <a href="#">
-                            <img src="./assets/images/post_picture_7.png" alt="sample" class=""/>
+                        <img src="./assets/images/post_picture_1.png" alt="sample" class=""/>
+                        <div class="post-content">
                             <div class="post-detail">
                                 <span class="material-symbols-outlined icon">person</span><span class="text-icon">Jimmy Nguyen</span>
                                 <span class="material-symbols-outlined icon">schedule</span><span class="text-icon">3 mins ago</span>
                             </div>
                             <h1 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur ipsum linum amataki hulanjfh bfueodap fiefhief... </p>
-                        <a  href="#" class="read-more-item">Read more <span class="arrow"> &xrarr;</span></a>
-                        </a >
+                            <button href="#" class="read-more-item">Read more <span class="arrow"> &xrarr;</span></button>
+                        </div>
                     </div>
                     <div class="post-item">
-                        <a href="#">
-                            <img src="./assets/images/post_picture_8.png" alt="sample" class=""/>
+                        <img src="./assets/images/post_picture_1.png" alt="sample" class=""/>
+                        <div class="post-content">
                             <div class="post-detail">
                                 <span class="material-symbols-outlined icon">person</span><span class="text-icon">Jimmy Nguyen</span>
                                 <span class="material-symbols-outlined icon">schedule</span><span class="text-icon">3 mins ago</span>
                             </div>
                             <h1 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur ipsum linum amataki hulanjfh bfueodap fiefhief... </p>
-                        <a  href="#" class="read-more-item">Read more <span class="arrow"> &xrarr;</span></a>
-                        </a >
+                            <button href="#" class="read-more-item">Read more <span class="arrow"> &xrarr;</span></button>
+                        </div>
                     </div>
                     <div class="post-item">
-                        <a href="#">
-                            <img src="./assets/images/post_picture_9.png" alt="sample" class=""/>
+                        <img src="./assets/images/post_picture_1.png" alt="sample" class=""/>
+                        <div class="post-content">
                             <div class="post-detail">
                                 <span class="material-symbols-outlined icon">person</span><span class="text-icon">Jimmy Nguyen</span>
                                 <span class="material-symbols-outlined icon">schedule</span><span class="text-icon">3 mins ago</span>
                             </div>
                             <h1 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur ipsum linum amataki hulanjfh bfueodap fiefhief... </p>
-                        <a  href="#" class="read-more-item">Read more <span class="arrow"> &xrarr;</span></a>
-                        </a >
+                            <button href="#" class="read-more-item">Read more <span class="arrow"> &xrarr;</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="post-item">
+                        <img src="./assets/images/post_picture_1.png" alt="sample" class=""/>
+                        <div class="post-content">
+                            <div class="post-detail">
+                                <span class="material-symbols-outlined icon">person</span><span class="text-icon">Jimmy Nguyen</span>
+                                <span class="material-symbols-outlined icon">schedule</span><span class="text-icon">3 mins ago</span>
+                            </div>
+                            <h1 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur ipsum linum amataki hulanjfh bfueodap fiefhief... </p>
+                            <button href="#" class="read-more-item">Read more <span class="arrow"> &xrarr;</span></button>
+                        </div>
+                    </div>
+                    <div class="post-item">
+                        <img src="./assets/images/post_picture_1.png" alt="sample" class=""/>
+                        <div class="post-content">
+                            <div class="post-detail">
+                                <span class="material-symbols-outlined icon">person</span><span class="text-icon">Jimmy Nguyen</span>
+                                <span class="material-symbols-outlined icon">schedule</span><span class="text-icon">3 mins ago</span>
+                            </div>
+                            <h1 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur ipsum linum amataki hulanjfh bfueodap fiefhief... </p>
+                            <button href="#" class="read-more-item">Read more <span class="arrow"> &xrarr;</span></button>
+                        </div>
+                    </div>
+                    <div class="post-item">
+                        <img src="./assets/images/post_picture_1.png" alt="sample" class=""/>
+                        <div class="post-content">
+                            <div class="post-detail">
+                                <span class="material-symbols-outlined icon">person</span><span class="text-icon">Jimmy Nguyen</span>
+                                <span class="material-symbols-outlined icon">schedule</span><span class="text-icon">3 mins ago</span>
+                            </div>
+                            <h1 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur ipsum linum amataki hulanjfh bfueodap fiefhief... </p>
+                            <button href="#" class="read-more-item">Read more <span class="arrow"> &xrarr;</span></button>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,480 @@
+/*-----------------General---------------------------------*/
+@font-face {
+  font-family: SVN-Gilroy;
+  src: url(../assets/fonts/SVN-Gilroy\ Regular.otf);
+}
+
+@font-face {
+  font-family: SVN-Gilroy Bold;
+  src: url(../assets/fonts/SVN-Gilroy\ Bold.otf);
+}
+
+@font-face {
+  font-family: Noto Sans JP;
+  src: url(../assets/fonts/NotoSansJP-Regular.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*-----------------Header---------------------------------*/
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 85px;
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.65);
+  box-shadow: 0 1px 14px rgba(0, 0, 0, 0.25);
+  font-family: Noto Sans JP;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px -65px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+.header-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header-logo .logo-title {
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: bold;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.search-form .form-group input::placeholder {
+  font-family: Noto Sans JP;
+  padding: 15px;
+  color: #d4d1d4;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+}
+
+.header-menu .header-menu-item {
+  cursor: pointer;
+  padding: 15px;
+  transition-duration: 0.3s;
+  color: black;
+  text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.nav-menu .header-menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-menu .header-menu-item a {
+  text-decoration: none;
+}
+
+.header-menu .header-menu-item .nav-link {
+  font-family: Noto Sans JP;
+}
+
+.top-border {
+  color: #ffffff;
+}
+
+.top-border {
+  border: 2px solid #770303;
+  border-radius: 3px;
+  background-color: #770303;
+  color: white;
+  font-weight: bold;
+  height:31px;
+  width:50px;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+}
+
+.search {
+  border: 1px solid #D4D4D4;
+  margin-right: 225px;
+  width: 311px;
+  height: 37.5px;
+  font-size:14px;
+  border-radius:4px;
+}
+
+.search-span {
+  position: absolute;
+  color: #a7a7a7;
+  margin: 6.75px 280px;
+}
+
+.header-account {
+  display: flex;
+  align-items: center;
+}
+
+.header-account span {
+  padding: 0 0 0 15px;
+  font-weight: 900;
+}
+
+/*-----------------Post---------------------------------*/
+.posts {
+  margin: 60.5px 85px;
+}
+
+.posts .row {
+  display: flex;
+  margin-bottom: 58.3px;
+  flex-wrap: no wrap;
+  justify-content: space-between;
+}
+.posts .container {
+  margin: 0 0 31.67px 0;
+}
+
+.header-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.posts .title-post {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: Noto Sans JP;
+}
+
+.header-post select {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: Noto Sans JP;
+  color: #212121;
+  padding: 10px 12px;
+  width: 144px;
+  height: auto;
+  font-family: Noto Sans JP;
+  border: 1px solid #dedede;
+  border-radius: 4px;
+}
+
+.header-post select option {
+  font-family: Noto Sans JP;
+}
+
+.post-content {
+  margin: 20.83px 16.67px;
+}
+
+.post-item {
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  overflow-wrap: break-word;
+  overflow: hidden;
+  font-family: SVN-Gilroy;
+  width: 32%;
+  height: auto;
+}
+
+.post-item h1 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  font-family: SVN-Gilroy Bold;
+}
+
+.post-item p {
+  text-overflow: ellipse;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.post-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px 8px 0 0;
+}
+
+.post-detail {
+  margin: 20.83px 0 12.5px 0;
+}
+
+.post-detail .icon {
+  color: #858383;
+  position: relative;
+}
+
+.icon {
+  top: 5px;
+  margin-right: 5px;
+}
+.post-detail .text-icon {
+  font-size: 18px;
+  margin-right: 18.75px;
+}
+
+.post-item h1,
+.post-item p {
+  padding: 5px;
+}
+
+.post-item p {
+  line-height: 24px;
+}
+
+.read-more-item {
+  display:flex;
+  text-align: center;
+  background-color: white;
+  color: #c40000;
+  padding: 10px 15px;
+  border: 0.1px solid #e4e4e4;
+  margin-top: 24.16px;
+  border-radius:4px;
+}
+
+.read-more-item .arrow {
+  font-size: 14px;
+  font-weight: bold;
+  color: #c40000;
+  padding: 0 0 0 10px;
+}
+
+.read-more-item:hover {
+  background-color: #c40000;
+  color: white;
+}
+
+.read-more-item:hover .arrow {
+  color: white;
+}
+
+/*-----------------Pagination---------------------------------*/
+.pagination ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.pagination ul li {
+  position: relative;
+  color: #211e3b;
+  text-decoration: none;
+  border: 0px solid black;
+  border-radius: 50%;
+  font-weight: 900;
+  font-family: "SVN-Gilroy Bold";
+  color: #211e3b;
+  width:30px;
+  height:30px;
+  margin: 0 3px;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination ul .active {
+  background-color: #ffe4e4;
+  color: #c40000;
+  border-radius: 50%;
+}
+
+.pagination ul .next {
+  background-color: #e5e5e5;
+  border: 0px solid black;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+
+.pagination ul button:hover {
+  background-color: #c40000;
+  color: white;
+}
+
+.pagination ul li:hover {
+  background-color: #ffe4e4;
+  color: #c40000;
+  border-radius: 50%;
+}
+
+
+/*-----------------Footer---------------------------------*/
+footer {
+  background-color: #000000;
+}
+
+footer .content {
+  font-family: Noto Sans JP;
+  padding: 40px;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 546px) {
+  /*-----------------Header ---------------------------------*/
+  .navigation {
+    background-color: #ffffff;
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-menu.active {
+    left: 0;
+    top: 43px;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .slider img {
+    height: 250px;
+  }
+
+  /* .header-menu-item{
+  display:none
+}
+  */
+
+  .header-logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+  .search-form input {
+    display: none;
+  }
+
+  .logo-title nav {
+    font-size: 10px;
+    line-height: 0;
+  }
+
+  .logo-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .search-span {
+    margin: 6.75px 50px;
+    font-size: 20px;
+    color: #a7a7a7;
+  }
+
+  /*-----------------Posts---------------------------------*/
+  .posts .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: block;
+  }
+
+  .post-item {
+    margin-bottom:40px;
+    width: 100%;
+  }
+
+  .posts {
+    margin: 26.5px 33px;
+  }
+
+  .posts .title-post {
+    font-size: 25px;
+  }
+
+  .post-detail,
+  .post-item p {
+    font-size: 15px;
+  }
+
+  .post-item h1 {
+    font-size: 18px;
+  }
+
+  .post-detail .text-icon {
+    font-size: 15px;
+  }
+
+  /*-----------------Footer---------------------------------*/
+  footer .content {
+    font-size: 12px;
+  }
+}

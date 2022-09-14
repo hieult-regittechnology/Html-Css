@@ -258,6 +258,8 @@ a {
 }
 
 .read-more-item {
+  display:flex;
+  text-align: center;
   background-color: white;
   color: red;
   padding: 10px 15px;
@@ -269,6 +271,7 @@ a {
   font-size: 14px;
   font-weight: bold;
   color: #c40000;
+  padding: 0 0 0 10px;
 }
 
 .read-more-item:hover {
@@ -302,22 +305,25 @@ a {
 .pagination a.active {
   background-color: #ffe4e4;
   color: #c40000;
-  padding: 5px 10px;
+  padding: 3px 10px;
 }
 
-.pagination a:hover:not(.active, .previous, .next) {
+.pagination a:hover:not(.active, .next) {
   background-color: #ffe4e4;
-}
-
-.pagination a.previous {
-  background-color: #c40000;
-  color: white;
+  padding: 3px 10px;
 }
 
 .pagination a.next {
   background-color: #e5e5e5;
   color: white;
+  padding: 9px 17px;
 }
+
+.pagination a.next:hover {
+  background-color: #c40000;
+  color: white;
+}
+
 
 /*-----------------Footer---------------------------------*/
 footer {
